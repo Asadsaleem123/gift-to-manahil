@@ -30,8 +30,7 @@ function getRandomImage() {
     const randomMemeUrl = randomMeme.url
     const randomMemeText = randomMeme.name.split(" ")
     const randomMemeTextOne = randomMemeText[1]
-    document.getElementById("img--container").innerHTML += `<img src = ${randomMemeUrl} />`
-    document.getElementById("input-one").value = randomMemeTextOne
+    document.getElementById("img--container").innerHTML = `<img src = ${randomMemeUrl} />`
   }
 export default function Main(){
     console.log(myFunction([1,2,3] , [4,5,6]))
@@ -56,15 +55,15 @@ export default function Main(){
            <form onSubmit={prevent}>
             <div className="inputs--container">
             <input
+            placeholder="image top text"
             name="topText"
-             id="input-one" 
              type="text"
              value={imageText.topText}
              onChange={handleChange}
              />
               <input 
+              placeholder="image bottom text"
               name = "bottomText"
-              id="input-two"
               type="text"
               value={imageText.bottomText}
               onChange={handleChange}
@@ -77,7 +76,7 @@ export default function Main(){
            <h1 className="top-text">{imageText.topText}</h1>
                <h1 className="bottom-text">{imageText.bottomText}</h1>
             <div className="meme--container" id="img--container">
-             
+               <img src="https://i.imgflip.com/1bhf.jpg" />
             </div>
         </div>
       
