@@ -18,7 +18,6 @@ function getRandomImage() {
     document.getElementById("img--container").innerHTML = `<img src = ${randomMemeUrl} />`
   }
 export default function Main(){
-    console.log(myFunction([1,2,3] , [4,5,6]))
     const [imageText , setImageText ] = React.useState({
         topText : "",
         bottomText : ""
