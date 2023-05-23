@@ -4,22 +4,7 @@ let ImageContainer =""
 const prevent = (e)=>{
     e.preventDefault()
 }
-function myFunction(a , b){
-   let aliceScore = 0
-   let bobScore = 0
-   let arr = []
-   for(let i = 0 ; i<a.length ; i++){
-    if(a[i] > b[i]){
-        aliceScore +=1
-        
-    }else if(a[i] < b[i]){
-        bobScore += 1
-    }
-   }
-arr.push(aliceScore)
-arr.push(bobScore)
-return arr
-}
+
 
 function getRandomImage() {
     const Memes = data.data.memes.map((Meme)=>{
